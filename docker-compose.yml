@@ -15,3 +15,5 @@ services:
       MYSQL_DATABASE: monitoramento
     ports:
       - "3306:3306"
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
